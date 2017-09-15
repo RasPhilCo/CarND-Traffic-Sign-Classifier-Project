@@ -119,11 +119,11 @@ Here are six German traffic signs that I found on the web:
 ![5](random_signs/5.png)
 ![6](random_signs/6.png)
 
-I like this set because there is a lot of similarity between the signs. Two signs are both triangles with an image inside the triangle. And the other four signs are all circular, with two sets looking very similar -- two with an up arrow and two with an outer red circle.
+I like this set because there is a lot of similarity between the signs which will test how well the classifiers works on very similar images. Two signs are both triangles with an image inside the triangle. And the other four signs are all circular, with two sets looking very similar -- two with an up arrow and two with an outer red circle. The images are also bright, well cropped, with good contrast, and clearly denote what type of sign they are which definitely helps the model classify then better.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-Fortunately, on this small test set, my model was 100% accurate:
+Fortunately, on this random image set, my model was 100% accurate. This is better than the 91% accuracy my model scored on the actual test set.
 
 | Image			        |     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
@@ -134,7 +134,7 @@ Fortunately, on this small test set, my model was 100% accurate:
 | Go straight or left			| Go straight or left      							|
 | General caution			| General caution      							|
 
-It seems my model may have learned these labels well, but this is a very small test.
+It seems my model may have learned these labels well, but this is a very small test. As stated above, the images are also bright, well cropped, with good contrast, and clearly denote what type of sign they are which definitely helps the model classify then better.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -144,7 +144,7 @@ My model happily predicted 5 of the 6 images at 100%. The sixth image it predict
 
 This sign is a red outer circle with an empty inner section, which looks A LOT like the other circular signs, so I can see why my model was less certain about this image.
 
-| Image			        |     Prediction	        					|
+| Certainty			        |     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
 | 100%      		| Speed limit (30km/h)   									|
 | 100%     			| Bumpy road 										|
